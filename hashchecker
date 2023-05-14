@@ -1,0 +1,6 @@
+#!/bin/bash
+
+givenChecksum = "hash";
+calculatedChecksum = md5sum ~/Downloads/Maltego.v4.3.1.dmg | grep -oe "[0-9a-f]\{32\}"
+
+if $givenchecksum == "$calculatedChecksum"
